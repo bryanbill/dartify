@@ -1,0 +1,40 @@
+{
+  "name": "dartify",
+  "version": "0.1.0",
+  "description": "Create dart interops directly from typescript type definitions",
+  "keywords": [
+    "Dart",
+    "Typescript",
+    "Interop"
+  ],
+  "homepage": "https://github.com/bryanbill/dartify#readme",
+  "bugs": {
+    "url": "https://github.com/bryanbill/dartify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanbill/dartify.git"
+  },
+  "license": "MIT",
+  "author": "Brian Omondi <brian@omondi.dev>",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "dartify": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "jest --passWithNoTests --runInBand --no-cache --config jest.config.js"
+  },
+  "dependencies": {
+    "@types/node": "^24.0.10",
+    "glob": "^11.0.3",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.4",
+    "ts-jest": "^29.4.0"
+  }
+}
